@@ -56,10 +56,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:ishans2@cs.washington.edu"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    ishans2 [at] cs [dot] washington [dot] edu
                   </a>
                 </div>
               </div>
@@ -70,10 +70,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+14254357077"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +1 (425) 435-7077
                   </a>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Seattle, WA, United States
                   </a>
                 </div>
               </div>
@@ -93,17 +93,11 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/ishan-sinha-7b74b51aa/" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://x.com/ishan__sinha" target="_blank">
                   <Twitter />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
                 </a>
               </div>
             </div>

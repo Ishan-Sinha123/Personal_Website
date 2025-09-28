@@ -3,32 +3,28 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "CLIP-Loss Optimization",
+    description: "Novel CLIP-loss optimizations for high resolution to 3D content generation",
+    image: "/projects/PosterDeepLearning.svg",
+    tags: ["Python", "Machine Learning", "Jupyter Notebooks"],
+    githubUrl: "https://github.com/Ishan-Sinha123/CLIPLossOptimization",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Occupancy Detection through Bluetooth",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Built during COVID-19, improved after. Cost effective, lightweight (runs on RaspBerry Pi) solution to monitor occupancy of rooms through Bluetooth signals.",
+    image: "/projects/Bluetooth_Project_Demo.png",
+    tags: ["Python", "Machine Learning", "C++", "Embedded Systems"],
+    demoUrl: "https://youtu.be/fPqjzmNYYiw",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Human-based Benchmarking for Interactive Graph Visualization Systems",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Novel approach to benchmarking graph visualization systems (Neo4j, Cytoscape, Tulip, TigerGraph) simulating human interaction with systems.",
+    image: "/projects/NWDS_Poster.svg",
+    tags: ["Python", "Graph Databases"],
   },
 ];
 
@@ -42,8 +38,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Some recent + high impact projects!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,7 +95,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Ishan-Sinha123"
           >
             Check My Github <ArrowRight size={16} />
           </a>

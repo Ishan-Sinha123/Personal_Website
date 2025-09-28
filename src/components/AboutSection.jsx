@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Eye, Database, Brain } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,21 +12,36 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Passionate BackEnd Developer
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              With over 4 years of experience in software development, I specialize
+              in creating high throughput, low latency systems that are cloud
+              agnostic, maintainable, and cost efficient.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              I'm passionate about learning new technologies. I'm constantly
+              exploring the forefront of technical innovation. Some of my recent interests include:
             </p>
+            <ul className="list-disc list-inside text-muted-foreground pl-6 space-y-2">
+              <li>
+                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  TernFs (XTX Market's Open Source Distributed File System)
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
+                </a>
+              </li>
+            </ul>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -47,13 +62,14 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                      <Eye className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg">Observability</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Building complex distributed tracing infrastructure with OpenTelemetry
+                    for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
+                    (using AWS X-Ray, Grafana).
                   </p>
                 </div>
               </div>
@@ -61,13 +77,14 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                      <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">Data Pipelines</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Implementing terabyte-scale data pipelines
+                    using both Apache Airflow & bespoke infrastructure
+                    with intelligent sharding to optimize resource usage.
                   </p>
                 </div>
               </div>
@@ -75,14 +92,15 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                      <Brain className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Reasoning Model Research</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Post-training & expanded inference with SOTA reasoning models.
+                    Focus on improving reasoning capabilities for formal proof verification
+                    in advanced mathematics.
                   </p>
                 </div>
               </div>
