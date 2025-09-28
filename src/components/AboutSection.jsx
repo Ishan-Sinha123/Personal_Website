@@ -4,10 +4,30 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
       {" "}
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
-        </h2>
+      <div className="container mx-auto max-w-5xl relative">
+        {/* Background images row */}
+        <div className="absolute inset-0 w-full h-64 flex z-0">
+          {[1,2,3,4,5].map((num) => (
+            <img
+              key={num}
+              src={require(`../assets/ishan_picture (${num}).jpeg`)}
+              alt={`Background ${num}`}
+              className="w-1/5 h-full object-cover opacity-60"
+            />
+          ))}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        {/* Profile image and name/title */}
+        <div className="relative z-10 pt-8 pb-8">
+          <img
+            src="/profile.jpg"
+            alt="Ishan Sinha"
+            className="mx-auto rounded-full w-32 h-32 mb-6 object-cover border-4 border-primary"
+          />
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white drop-shadow-lg">
+            Hi I'm Ishan Sinha
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -50,7 +70,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/IshanSinha2026Resume.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
