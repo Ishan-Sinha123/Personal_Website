@@ -1,5 +1,11 @@
 import { Eye, Database, Brain } from "lucide-react";
 
+import ishan1 from '../assets/ishan_picture (1).jpeg';
+import ishan2 from '../assets/ishan_picture (2).jpeg';
+import ishan3 from '../assets/ishan_picture (3).jpeg';
+import ishan4 from '../assets/ishan_picture (4).jpeg';
+import ishan5 from '../assets/ishan_picture (5).jpeg';
+
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -7,11 +13,11 @@ export const AboutSection = () => {
       <div className="container mx-auto max-w-5xl relative">
         {/* Background images row */}
         <div className="absolute inset-0 w-full h-64 flex z-0">
-          {[1,2,3,4,5].map((num) => (
+          {[ishan1, ishan2, ishan3, ishan4, ishan5].map((img, idx) => (
             <img
-              key={num}
-              src={require(`../assets/ishan_picture (${num}).jpeg`)}
-              alt={`Background ${num}`}
+              key={idx}
+              src={img}
+              alt={`Background ${idx+1}`}
               className="w-1/5 h-full object-cover opacity-60"
             />
           ))}
