@@ -34,12 +34,7 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            <div className="mt-6 space-y-3">
-              <a href="#contact" className="block border border-foreground rounded-md px-4 py-3 text-center text-foreground hover:bg-foreground hover:text-background transition-colors">Get In Touch</a>
-              <a href="/IshanSinha2026Resume.pdf" download className="block border border-foreground rounded-md px-4 py-3 text-center text-foreground hover:bg-foreground hover:text-background transition-colors">
-                <Download className="h-4 w-4 inline-block mr-2" /> Download CV
-              </a>
-            </div>
+            <div className="mt-6" />
           </div>
           {/* Right column: cards */}
           <div className="space-y-6">
@@ -93,6 +88,16 @@ export const AboutSection = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Centered oval action buttons below both columns */}
+        <div className="mt-8 flex justify-center items-center gap-4">
+          <a href="#contact" className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-foreground text-foreground bg-background hover:bg-foreground hover:text-background transition-colors font-bold">
+            Get In Touch
+          </a>
+          <a href="/IshanSinha2026Resume.pdf" download className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-foreground text-foreground bg-background hover:bg-foreground hover:text-background transition-colors font-bold">
+            <Download className="h-4 w-4 inline-block mr-2" /> Download CV
+          </a>
         </div>
       </div>
     </section>

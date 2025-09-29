@@ -118,22 +118,29 @@ export const ProjectsSection = () => {
 				<Modal
 					isOpen={modalIsOpen}
 					onRequestClose={closeModal}
+					shouldCloseOnOverlayClick={true}
 					contentLabel="Project Image Zoom"
-					className="flex items-center justify-center fixed inset-0 bg-black/70 z-50"
-					overlayClassName="fixed inset-0 bg-black/70 z-50"
+					className="fixed inset-0 flex items-center justify-center z-50 outline-none"
+					overlayClassName="fixed inset-0 bg-black/60 z-40"
 				>
-					<div className="bg-card p-4 rounded-lg shadow-lg flex flex-col items-center">
-						<img
-							src={modalImage}
-							alt="Zoomed Project"
-							className="max-w-full max-h-[80vh] rounded-lg"
-						/>
-						<button
-							onClick={closeModal}
-							className="mt-4 px-4 py-2 bg-primary text-foreground rounded"
-						>
-							Close
-						</button>
+					{/* click-through overlay handled by Modal; inner container stops propagation */}
+					<div className="relative max-w-[90vw] max-h-[90vh] w-full flex items-center justify-center">
+						<div className="bg-card p-4 rounded-lg shadow-lg w-full h-full flex items-center justify-center">
+							<button
+								onClick={closeModal}
+								aria-label="Close"
+								className="absolute top-3 right-3 bg-black/30 hover:bg-black/40 text-foreground rounded-full p-2 z-50"
+							>
+								✕
+							</button>
+							<div className="max-w-full max-h-[80vh] w-full flex items-center justify-center">
+								<img
+									src={modalImage}
+									alt="Zoomed Project"
+									className="object-contain w-full h-full rounded-lg"
+								/>
+							</div>
+						</div>
 					</div>
 				</Modal>
 
