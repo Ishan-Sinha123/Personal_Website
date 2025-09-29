@@ -5,36 +5,40 @@ export const AboutSection = () => {
     <section id="about" className="py-12">
       <div className="container max-w-6xl mx-auto">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
-          {/* Left column: intro and links */}
+          {/* Left column: intro and links (now outlined) */}
           <div className="space-y-6 text-left">
-            <h3 className="text-2xl font-semibold text-foreground">Passionate BackEnd Developer</h3>
-            <p className="text-foreground">
-              With over 4 years of experience in software development, I specialize
-              in creating high throughput, low latency systems that are cloud native and scalable.
-            </p>
-            <p className="text-foreground">Exploring the forefront of technical innovation. Some of my recent interests:</p>
-
-            <div className="space-y-3">
-              <div className="border border-border rounded-md p-4 bg-background/50">
-                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
-                  TernFS: High-performance distributed file system
-                </a>
+            <div className="border border-border rounded-md p-6 bg-background/50 h-full flex flex-col justify-between">
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground">Passionate BackEnd Developer</h3>
+                <p className="text-foreground">
+                  With over 4 years of experience in software development, I specialize
+                  in creating high throughput, low latency systems that are cloud native and scalable.
+                </p>
+                <p className="text-foreground">Exploring the forefront of technical innovation. Some of my recent interests:</p>
               </div>
 
-              <div className="border border-border rounded-md p-4 bg-background/50">
-                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80 block">
-                  OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
-                </a>
+              <div className="mt-4 space-y-3">
+                <div className="border border-border rounded-md p-4 bg-background/50">
+                  <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
+                    TernFS: High-performance distributed file system
+                  </a>
+                </div>
+
+                <div className="border border-border rounded-md p-4 bg-background/50">
+                  <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80 block">
+                    OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
+                  </a>
+                </div>
+
+                <div className="border border-border rounded-md p-4 bg-background/50">
+                  <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
+                    Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
+                  </a>
+                </div>
               </div>
 
-              <div className="border border-border rounded-md p-4 bg-background/50">
-                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
-                  Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
-                </a>
-              </div>
+              <div className="mt-6" />
             </div>
-
-            <div className="mt-6" />
           </div>
           {/* Right column: cards */}
           <div className="space-y-6 flex flex-col h-full">
