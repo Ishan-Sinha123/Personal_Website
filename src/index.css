@@ -4,7 +4,7 @@
 }
 
 .animate-hero-scroll-reverse {
-  animation: hero-scroll-reverse 6s linear infinite;
+  animation: hero-scroll-reverse 14s linear infinite;
 }
 @keyframes hero-scroll {
   0% { transform: translateX(0); }

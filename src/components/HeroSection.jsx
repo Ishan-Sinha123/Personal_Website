@@ -26,6 +26,24 @@ export const HeroSection = () => {
           ))}
         </div>
       </div>
+        <div className="absolute inset-0 w-full h-full flex z-0 overflow-hidden">
+          <div className="flex w-full h-full animate-hero-scroll-reverse">
+            {[img1, img2, img3, img4, img5, img1, img2, img3, img4, img5].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Background ${idx + 1}`}
+                className={
+                  idx === 0 || idx === 1 || idx === 3
+                    ? "object-contain h-full w-auto mx-2"
+                    : "object-contain h-full w-1/4 mx-2"
+                }
+                style={{ filter: "blur(1px)" }}
+                draggable={false}
+              />
+            ))}
+          </div>
+        </div>
 
       {/* Main content with strong visibility */}
       <div className="container max-w-4xl mx-auto text-center z-10 relative">
