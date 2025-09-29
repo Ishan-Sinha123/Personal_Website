@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-12">
       <div className="container max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           {/* Left column: intro and links */}
           <div className="space-y-6 text-left">
             <h3 className="text-2xl font-semibold text-foreground">Passionate BackEnd Developer</h3>
@@ -37,54 +37,60 @@ export const AboutSection = () => {
             <div className="mt-6" />
           </div>
           {/* Right column: cards */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col h-full">
             <h3 className="text-2xl font-semibold text-foreground">Specializations</h3>
 
-            <div className="gradient-border p-6 card-hover group">
-              <div className="flex items-center gap-4">
+            <div className="gradient-border p-6 card-hover group relative flex-1 overflow-hidden">
+              <div className="flex items-center gap-4 h-full">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Eye className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Observability</h4>
-                  <p className="mt-2 text-sm text-muted-foreground opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
-                    Building complex distributed tracing infrastructure with OpenTelemetry
-                    for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
-                    (using AWS X-Ray, Grafana).
-                  </p>
                 </div>
+              </div>
+              <div className="absolute inset-0 p-6 bg-background/80 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+                <p className="text-sm text-muted-foreground">
+                  Building complex distributed tracing infrastructure with OpenTelemetry
+                  for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
+                  (using AWS X-Ray, Grafana).
+                </p>
               </div>
             </div>
 
-            <div className="gradient-border p-6 card-hover group">
-              <div className="flex items-center gap-4">
+            <div className="gradient-border p-6 card-hover group relative flex-1 overflow-hidden">
+              <div className="flex items-center gap-4 h-full">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Database className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Data Pipelines</h4>
-                  <p className="mt-2 text-sm text-muted-foreground opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
-                    Implementing terabyte-scale data pipelines
-                    using both Apache Airflow & bespoke infrastructure
-                    with intelligent sharding to optimize resource usage.
-                  </p>
                 </div>
+              </div>
+              <div className="absolute inset-0 p-6 bg-background/80 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+                <p className="text-sm text-muted-foreground">
+                  Implementing terabyte-scale data pipelines
+                  using both Apache Airflow & bespoke infrastructure
+                  with intelligent sharding to optimize resource usage.
+                </p>
               </div>
             </div>
 
-            <div className="gradient-border p-6 card-hover group">
-              <div className="flex items-center gap-4">
+            <div className="gradient-border p-6 card-hover group relative flex-1 overflow-hidden">
+              <div className="flex items-center gap-4 h-full">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Brain className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Reasoning Model Research</h4>
-                  <p className="mt-2 text-sm text-muted-foreground opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
-                    Post-training & expanded inference with SOTA reasoning models.
-                    Focus on improving reasoning capabilities for formal proof verification
-                    in advanced mathematics.
-                  </p>
                 </div>
+              </div>
+              <div className="absolute inset-0 p-6 bg-background/80 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+                <p className="text-sm text-muted-foreground">
+                  Post-training & expanded inference with SOTA reasoning models.
+                  Focus on improving reasoning capabilities for formal proof verification
+                  in advanced mathematics.
+                </p>
               </div>
             </div>
           </div>
