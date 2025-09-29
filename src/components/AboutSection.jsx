@@ -12,33 +12,31 @@ export const AboutSection = () => {
               With over 4 years of experience in software development, I specialize
               in creating high throughput, low latency systems that are cloud native and scalable.
             </p>
-            <p className="text-foreground">
-              Exploring the forefront of technical innovation. Some of my recent interests include:
-            </p>
-            <ul className="list-disc list-inside text-foreground pl-6 space-y-2">
-              <li className="text-foreground">
-                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
+            <p className="text-foreground">Exploring the forefront of technical innovation. Some of my recent interests:</p>
+
+            <div className="space-y-3">
+              <div className="border border-border rounded-md p-4 bg-background/50">
+                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
                   TernFS: High-performance distributed file system
                 </a>
-              </li>
-              <li className="text-foreground">
-                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-foreground transition-colors max-w-xl" style={{ textIndent: '-0.75rem', paddingLeft: '0.75rem' }}>
+              </div>
+
+              <div className="border border-border rounded-md p-4 bg-background/50">
+                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80 block">
                   OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                 </a>
-              </li>
-              <li className="text-foreground">
-                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
+              </div>
+
+              <div className="border border-border rounded-md p-4 bg-background/50">
+                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
                   Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
                 </a>
-              </li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="cosmic-button text-foreground border-foreground bg-background hover:bg-foreground hover:text-background font-bold">Get In Touch</a>
-              <a
-                href="/IshanSinha2026Resume.pdf"
-                download
-                className="px-6 py-2 rounded-full border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors duration-300 font-bold"
-              >
+              </div>
+            </div>
+
+            <div className="mt-6 space-y-3">
+              <a href="#contact" className="block border border-foreground rounded-md px-4 py-3 text-center text-foreground hover:bg-foreground hover:text-background transition-colors">Get In Touch</a>
+              <a href="/IshanSinha2026Resume.pdf" download className="block border border-foreground rounded-md px-4 py-3 text-center text-foreground hover:bg-foreground hover:text-background transition-colors">
                 <Download className="h-4 w-4 inline-block mr-2" /> Download CV
               </a>
             </div>
