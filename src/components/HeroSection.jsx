@@ -13,15 +13,15 @@ export const HeroSection = () => {
     >
       {/* Animated background images row */}
       <div className="absolute inset-0 w-full h-full flex z-0 overflow-hidden">
-        <div className="flex w-full h-full animate-hero-scroll">
-          {[img1, img2, img3, img4, img5].map((img, idx) => (
+        <div className="flex w-full h-full animate-hero-scroll-reverse">
+          {[img1, img2, img3, img4, img5, img1, img2, img3, img4, img5].map((img, idx) => (
             <img
               key={idx}
               src={img}
               alt={`Background ${idx + 1}`}
-              className="object-cover w-1/5 h-full opacity-60"
+              className="object-cover h-full"
+              style={{ minWidth: "100vw", filter: "blur(1px)" }}
               draggable={false}
-              style={{ filter: "blur(1px)" }}
             />
           ))}
         </div>

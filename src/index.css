@@ -1,3 +1,11 @@
+@keyframes hero-scroll-reverse {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200vw); }
+}
+
+.animate-hero-scroll-reverse {
+  animation: hero-scroll-reverse 6s linear infinite;
+}
 @keyframes hero-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-20%); }
