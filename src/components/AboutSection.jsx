@@ -23,17 +23,17 @@ export const AboutSection = () => {
             </p>
             <ul className="list-disc list-inside text-foreground pl-6 space-y-2">
               <li className="text-foreground">
-                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
+                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
                   TernFS: High-performance distributed file system
                 </a>
               </li>
               <li className="text-foreground">
-                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
+                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
                   OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                 </a>
               </li>
               <li className="text-foreground">
-                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
+                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
                   Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
                 </a>
               </li>
@@ -53,7 +53,7 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Eye className="h-6 w-6 text-primary" />
+                  <Eye className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Observability</h4>
@@ -68,7 +68,7 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Database className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Data Pipelines</h4>
@@ -83,7 +83,7 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Brain className="h-6 w-6 text-primary" />
+                  <Brain className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Reasoning Model Research</h4>

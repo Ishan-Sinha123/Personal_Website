@@ -33,7 +33,7 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="text-foreground"> Touch</span>
         </h2>
 
         <p className="text-center text-foreground mb-12 max-w-2xl mx-auto">
@@ -51,13 +51,13 @@ export const ContactSection = () => {
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-foreground" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
                     href="mailto:ishans2@cs.washington.edu"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     ishans2 [at] cs [dot] washington [dot] edu
                   </a>
@@ -65,13 +65,13 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-foreground" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
                     href="tel:+14254357077"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     +1 (425) 435-7077
                   </a>
@@ -79,11 +79,11 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-foreground" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                  <a className="text-muted-foreground hover:text-foreground transition-colors">
                     Seattle, WA, United States
                   </a>
                 </div>

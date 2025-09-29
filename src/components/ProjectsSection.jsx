@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
 				<h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">
 					{" "}
 					Featured{" "}
-					<span className="text-primary"> Projects </span>
+					<span className="text-foreground"> Projects </span>
 				</h2>
 
 				<p className="text-center text-foreground mb-12 max-w-2xl mx-auto">
@@ -97,14 +97,14 @@ export const ProjectsSection = () => {
 										<a
 											href={project.demoUrl}
 											target="_blank"
-											className="text-foreground/80 hover:text-primary transition-colors duration-300"
+											className="text-foreground/80 hover:text-foreground transition-colors duration-300"
 										>
 											<ExternalLink size={20} />
 										</a>
 										<a
 											href={project.githubUrl}
 											target="_blank"
-											className="text-foreground/80 hover:text-primary transition-colors duration-300"
+											className="text-foreground/80 hover:text-foreground transition-colors duration-300"
 										>
 											<Github size={20} />
 										</a>
