@@ -9,29 +9,23 @@ import ishan5 from '../assets/ishan_picture (5).jpeg';
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl relative">
-        {/* Background images row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold text-foreground">
               Passionate BackEnd Developer
             </h3>
-
-            <p className="text-muted-foreground">
+            <p className="text-foreground">
               With over 4 years of experience in software development, I specialize
-              in creating high throughput, low latency systems that are cloud
-              agnostic, maintainable, and cost efficient.
+              in creating high throughput, low latency systems that are cloud native and scalable.
             </p>
-
-            <p className="text-muted-foreground">
-              I'm passionate about learning new technologies. I'm constantly
-              exploring the forefront of technical innovation. Some of my recent interests include:
+            <p className="text-foreground">
+              Exploring the forefront of technical innovation. Some of my recent interests include:
             </p>
-            <ul className="list-disc list-inside text-muted-foreground pl-6 space-y-2">
+            <ul className="list-disc list-inside text-foreground pl-6 space-y-2">
               <li>
                 <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  TernFs (XTX Market's Open Source Distributed File System)
+                  TernFS: High-performance distributed file system
                 </a>
               </li>
               <li>
@@ -45,31 +39,25 @@ export const AboutSection = () => {
                 </a>
               </li>
             </ul>
-
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
-                {" "}
+              <a href="#contact" className="cosmic-button text-foreground">
                 Get In Touch
               </a>
-
               <a
                 href="/IshanSinha2026Resume.pdf"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="px-6 py-2 rounded-full border border-primary text-foreground hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
               </a>
             </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                      <Eye className="h-6 w-6 text-primary" />
+                  <Eye className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Observability</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="font-semibold text-lg text-foreground">Observability</h4>
+                  <p className="text-foreground">
                     Building complex distributed tracing infrastructure with OpenTelemetry
                     for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
                     (using AWS X-Ray, Grafana).
@@ -80,11 +68,11 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                      <Database className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Data Pipelines</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="font-semibold text-lg text-foreground">Data Pipelines</h4>
+                  <p className="text-foreground">
                     Implementing terabyte-scale data pipelines
                     using both Apache Airflow & bespoke infrastructure
                     with intelligent sharding to optimize resource usage.
@@ -95,12 +83,11 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                      <Brain className="h-6 w-6 text-primary" />
+                  <Brain className="h-6 w-6 text-primary" />
                 </div>
-
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Reasoning Model Research</h4>
-                  <p className="text-muted-foreground">
+                  <h4 className="font-semibold text-lg text-foreground">Reasoning Model Research</h4>
+                  <p className="text-foreground">
                     Post-training & expanded inference with SOTA reasoning models.
                     Focus on improving reasoning capabilities for formal proof verification
                     in advanced mathematics.
