@@ -1,15 +1,9 @@
-import { Eye, Database, Brain } from "lucide-react";
-
-import ishan1 from '../assets/ishan_picture (1).jpeg';
-import ishan2 from '../assets/ishan_picture (2).jpeg';
-import ishan3 from '../assets/ishan_picture (3).jpeg';
-import ishan4 from '../assets/ishan_picture (4).jpeg';
-import ishan5 from '../assets/ishan_picture (5).jpeg';
+import { Eye, Database, Brain, Download } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl relative">
+    <section id="about" className="py-12">
+      <div className="container max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left column: intro and links */}
           <div className="space-y-6 text-left">
@@ -28,7 +22,7 @@ export const AboutSection = () => {
                 </a>
               </li>
               <li className="text-foreground">
-                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="hover:underline text-foreground">
+                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-foreground transition-colors max-w-xl" style={{ textIndent: '-0.75rem', paddingLeft: '0.75rem' }}>
                   OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                 </a>
               </li>
@@ -42,9 +36,10 @@ export const AboutSection = () => {
               <a href="#contact" className="cosmic-button text-foreground border-foreground bg-background hover:bg-foreground hover:text-background font-bold">Get In Touch</a>
               <a
                 href="/IshanSinha2026Resume.pdf"
+                download
                 className="px-6 py-2 rounded-full border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors duration-300 font-bold"
               >
-                Download CV
+                <Download className="h-4 w-4 inline-block mr-2" /> Download CV
               </a>
             </div>
           </div>

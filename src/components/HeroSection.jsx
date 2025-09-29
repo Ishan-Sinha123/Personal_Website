@@ -24,7 +24,7 @@ export const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 drop-shadow mb-8">
-          I architect complex systems that are scalable & well-fit to price, memory, + compute constraints.
+          I architect complex systems that are scalable & well-fit to memory, compute, and cost constraints.
         </p>
 
         <div className="pt-4 opacity-0 animate-fade-in-delay-4">

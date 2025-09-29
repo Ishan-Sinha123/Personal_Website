@@ -7,7 +7,7 @@ const projects = [
 		id: 1,
 		title: "CLIP-Loss Optimization",
 		description:
-			"Novel CLIP-loss optimizations for high resolution to 3D content generation",
+			"Novel CLIP-loss optimizations for high resolution text to 3D content generation",
 		image: "/projects/PosterDeepLearning.svg",
 		tags: ["Python", "Machine Learning", "Jupyter Notebooks"],
 		githubUrl: "https://github.com/Ishan-Sinha123/CLIPLossOptimization",

@@ -38,7 +38,7 @@ export const SkillsSection = () => {
               <img
                 src={skill.logo}
                 alt={skill.name + ' logo'}
-                className={`w-10 h-10 object-contain mb-2 ${skill.invertLogo ? 'filter dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
+                className={`${skill.name === 'Go' ? 'w-12 h-12' : 'w-10 h-10'} object-contain mb-2 ${skill.invertLogo ? 'filter dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
               />
               <h3 className="font-semibold text-lg text-foreground mb-2 text-center">{skill.name}</h3>
               <p className="text-base text-foreground text-left w-full">{skill.description}</p>
