@@ -15,24 +15,22 @@ export const HeroSection = () => {
 
       {/* Main content with strong visibility */}
       <div className="container max-w-4xl mx-auto text-center z-10 relative">
-        <div className="space-y-6 bg-white/80 rounded-xl shadow-lg p-8">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0a2342] drop-shadow">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-[#0a2342] opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Ishan
-            </span>
-          </h1>
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0a2342] drop-shadow">
+          <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+          <span className="text-[#0a2342] opacity-0 animate-fade-in-delay-1">
+            {" "}
+            Ishan
+          </span>
+        </h1>
 
-          <p className="text-lg md:text-xl text-[#0a2342] max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 drop-shadow">
-            I architect complex systems that are scalable & well-fit to price, memory, + compute constraints.
-          </p>
+        <p className="text-lg md:text-xl text-[#0a2342] max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 drop-shadow">
+          I architect complex systems that are scalable & well-fit to price, memory, + compute constraints.
+        </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button bg-white text-[#0a2342] border-[#0a2342] hover:bg-[#0a2342] hover:text-white font-bold">
-              View My Work
-            </a>
-          </div>
+        <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+          <a href="#projects" className="cosmic-button bg-white text-[#0a2342] border-[#0a2342] hover:bg-[#0a2342] hover:text-white font-bold">
+            View My Work
+          </a>
         </div>
       </div>
 
