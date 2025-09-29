@@ -22,27 +22,27 @@ export const AboutSection = () => {
               Exploring the forefront of technical innovation. Some of my recent interests include:
             </p>
             <ul className="list-disc list-inside text-foreground pl-6 space-y-2">
-              <li>
-                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <li className="text-foreground">
+                <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
                   TernFS: High-performance distributed file system
                 </a>
               </li>
-              <li>
-                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <li className="text-foreground">
+                <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
                   OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                 </a>
               </li>
-              <li>
-                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <li className="text-foreground">
+                <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-foreground">
                   Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
                 </a>
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="cosmic-button text-foreground">Get In Touch</a>
+              <a href="#contact" className="cosmic-button text-foreground font-bold">Get In Touch</a>
               <a
                 href="/IshanSinha2026Resume.pdf"
-                className="px-6 py-2 rounded-full border border-primary text-foreground hover:bg-primary/10 transition-colors duration-300"
+                className="px-6 py-2 rounded-full border border-primary text-foreground hover:bg-primary/10 transition-colors duration-300 font-bold"
               >
                 Download CV
               </a>

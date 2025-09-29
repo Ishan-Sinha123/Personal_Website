@@ -34,12 +34,10 @@ export const SkillsSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((skill, key) => (
-            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover flex items-center gap-4">
-              <img src={skill.logo} alt={skill.name + ' logo'} className="w-10 h-10 object-contain" />
-              <div>
-                <h3 className="font-semibold text-lg text-primary mb-2">{skill.name}</h3>
-                <p className="text-muted-foreground text-base">{skill.description}</p>
-              </div>
+            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover flex flex-col items-center">
+              <img src={skill.logo} alt={skill.name + ' logo'} className="w-10 h-10 object-contain mb-2" />
+              <h3 className="font-semibold text-lg text-primary mb-2 text-center">{skill.name}</h3>
+              <p className="text-base text-foreground text-left w-full">{skill.description}</p>
             </div>
           ))}
         </div>
