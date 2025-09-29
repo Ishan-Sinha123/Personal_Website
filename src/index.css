@@ -1,3 +1,11 @@
+@keyframes hero-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20%); }
+}
+
+.animate-hero-scroll {
+  animation: hero-scroll 20s linear infinite;
+}
 @import "tailwindcss";
 
 @theme {
