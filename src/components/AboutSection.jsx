@@ -12,29 +12,6 @@ export const AboutSection = () => {
       {" "}
       <div className="container mx-auto max-w-5xl relative">
         {/* Background images row */}
-        <div className="absolute inset-0 w-full h-64 flex z-0">
-          {[ishan1, ishan2, ishan3, ishan4, ishan5].map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt={`Background ${idx+1}`}
-              className="w-1/5 h-full object-cover opacity-60"
-            />
-          ))}
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
-        {/* Profile image and name/title */}
-        <div className="relative z-10 pt-8 pb-8">
-          <img
-            src="/profile.jpg"
-            alt="Ishan Sinha"
-            className="mx-auto rounded-full w-32 h-32 mb-6 object-cover border-4 border-primary"
-          />
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white drop-shadow-lg">
-            Hi I'm Ishan Sinha
-          </h2>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">

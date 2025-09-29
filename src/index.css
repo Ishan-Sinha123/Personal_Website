@@ -65,24 +65,24 @@
 @layer base {
   :root {
   --background: 210 40% 98%;
-  --foreground: 271 49% 26%; /* UW Purple */
+  --foreground: 218 80% 14%; /* Dark Blue */
 
   --card: 0 0% 100%;
 
-  --primary: 271 49% 26%; /* UW Purple */
-  --primary-foreground: 40 24% 60%; /* UW Gold */
+  --primary: 218 80% 14%; /* Dark Blue */
+  --primary-foreground: 218 80% 96%; /* Light Blue */
 
   --border: 214 32% 91%;
   }
 
   .dark {
   --background: 222 47% 4%;
-  --foreground: 40 24% 60%; /* UW Gold */
+  --foreground: 218 80% 96%; /* Light Blue */
 
   --card: 222 47% 8%;
 
-  --primary: 271 49% 26%; /* UW Purple */
-  --primary-foreground: 40 24% 60%; /* UW Gold */
+  --primary: 218 80% 14%; /* Dark Blue */
+  --primary-foreground: 218 80% 96%; /* Light Blue */
 
   --border: 217 33% 20%;
   }
