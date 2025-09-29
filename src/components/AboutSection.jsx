@@ -7,7 +7,7 @@ export const AboutSection = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           {/* Left column: intro and links (now outlined) */}
           <div className="space-y-6 text-left">
-            <div className="border-2 border-blue-500 rounded-md p-6 bg-background/50 h-full flex flex-col justify-between">
+            <div className="border-2 border-primary rounded-md p-6 bg-background/50 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl font-semibold text-foreground">Passionate BackEnd Developer</h3>
                 <p className="text-foreground">
@@ -18,19 +18,19 @@ export const AboutSection = () => {
               </div>
 
               <div className="mt-4 space-y-3">
-                <div className="border-2 border-blue-500 rounded-md p-4 bg-background/50">
+                <div className="border-2 border-primary rounded-md p-4 bg-background/50">
                   <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
                     TernFS: High-performance distributed file system
                   </a>
                 </div>
 
-                <div className="border-2 border-blue-500 rounded-md p-4 bg-background/50">
+                <div className="border-2 border-primary rounded-md p-4 bg-background/50">
                   <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80 block">
                     OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                   </a>
                 </div>
 
-                <div className="border-2 border-blue-500 rounded-md p-4 bg-background/50">
+                <div className="border-2 border-primary rounded-md p-4 bg-background/50">
                   <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
                     Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
                   </a>
@@ -53,7 +53,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg text-foreground">Observability</h4>
                 </div>
               </div>
-              <div className="absolute inset-0 p-6 bg-blue-600 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+              <div className="absolute inset-0 p-6 bg-primary flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
                 <p className="text-sm text-muted-foreground font-bold text-white">
                   Building complex distributed tracing infrastructure with OpenTelemetry
                   for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg text-foreground">Data Pipelines</h4>
                 </div>
               </div>
-              <div className="absolute inset-0 p-6 bg-blue-600 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+              <div className="absolute inset-0 p-6 bg-primary flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
                 <p className="text-sm text-muted-foreground font-bold text-white">
                   Implementing terabyte-scale data pipelines
                   using both Apache Airflow & bespoke infrastructure
@@ -89,7 +89,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg text-foreground">Reasoning Model Research</h4>
                 </div>
               </div>
-              <div className="absolute inset-0 p-6 bg-blue-600 flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+              <div className="absolute inset-0 p-6 bg-primary flex items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
                 <p className="text-sm text-muted-foreground font-bold text-white">
                   Post-training & expanded inference with SOTA reasoning models.
                   Focus on improving reasoning capabilities for formal proof verification
