@@ -11,22 +11,17 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
-      {/* Background images row */}
+      {/* Background images row - only as background */}
       <div className="absolute inset-0 w-full h-full flex z-0">
         {[img1, img2, img3, img4, img5].map((img, idx) => (
-          <div
+          <img
             key={idx}
-            className="flex-1 h-full relative"
-            style={{ minWidth: 0 }}
-          >
-            <img
-              src={img}
-              alt={`Background ${idx + 1}`}
-              className="object-cover w-full h-full opacity-70"
-              draggable={false}
-              style={{ filter: "blur(1px)" }}
-            />
-          </div>
+            src={img}
+            alt={`Background ${idx + 1}`}
+            className="object-cover w-1/5 h-full opacity-70"
+            draggable={false}
+            style={{ filter: "blur(1px)" }}
+          />
         ))}
       </div>
 
@@ -46,7 +41,7 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <a href="#projects" className="cosmic-button text-[#0a2342] border-[#0a2342] hover:bg-[#0a2342] hover:text-white">
               View My Work
             </a>
           </div>
