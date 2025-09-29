@@ -43,48 +43,37 @@ export const AboutSection = () => {
           </div>
           {/* Right column: cards */}
           <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-foreground">Specializations</h3>
+
             <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Eye className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Observability</h4>
-                  <p className="text-foreground">
-                    Building complex distributed tracing infrastructure with OpenTelemetry
-                    for Agentic workflows (using LangSmith/LangFuse) & high-demand data systems
-                    (using AWS X-Ray, Grafana).
-                  </p>
                 </div>
               </div>
             </div>
+
             <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Database className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Data Pipelines</h4>
-                  <p className="text-foreground">
-                    Implementing terabyte-scale data pipelines
-                    using both Apache Airflow & bespoke infrastructure
-                    with intelligent sharding to optimize resource usage.
-                  </p>
                 </div>
               </div>
             </div>
+
             <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Brain className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg text-foreground">Reasoning Model Research</h4>
-                  <p className="text-foreground">
-                    Post-training & expanded inference with SOTA reasoning models.
-                    Focus on improving reasoning capabilities for formal proof verification
-                    in advanced mathematics.
-                  </p>
                 </div>
               </div>
             </div>

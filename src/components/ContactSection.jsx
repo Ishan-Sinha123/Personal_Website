@@ -48,44 +48,46 @@ export const ContactSection = () => {
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
-              <div className="flex items-center space-x-6">
-                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
-                  <Mail className="h-6 w-6 text-foreground" />
+            <div className="space-y-6">
+              <div className="flex">
+                <div className="w-14 flex items-center justify-center">
+                  <div className="p-3 rounded-full bg-primary/10">
+                    <Mail className="h-6 w-6 text-foreground" />
+                  </div>
                 </div>
-                <div className="text-left">
-                  <h4 className="font-medium"> Email</h4>
-                  <a
-                    href="mailto:ishans2@cs.washington.edu"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                <div className="flex-1 text-left">
+                  <h4 className="font-medium">Email</h4>
+                  <a href="mailto:ishans2@cs.washington.edu" className="text-muted-foreground hover:text-foreground transition-colors">
                     ishans2 [at] cs [dot] washington [dot] edu
                   </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-6">
-                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
-                  <Phone className="h-6 w-6 text-foreground" />
+
+              <div className="flex">
+                <div className="w-14 flex items-center justify-center">
+                  <div className="p-3 rounded-full bg-primary/10">
+                    <Phone className="h-6 w-6 text-foreground" />
+                  </div>
                 </div>
-                <div className="text-left">
-                  <h4 className="font-medium"> Phone</h4>
-                  <a
-                    href="tel:+14254357077"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                <div className="flex-1 text-left">
+                  <h4 className="font-medium">Phone</h4>
+                  <a href="tel:+14254357077" className="text-muted-foreground hover:text-foreground transition-colors">
                     +1 (425) 435-7077
                   </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-6">
-                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
-                  <MapPin className="h-6 w-6 text-foreground" />
+
+              <div className="flex">
+                <div className="w-14 flex items-center justify-center">
+                  <div className="p-3 rounded-full bg-primary/10">
+                    <MapPin className="h-6 w-6 text-foreground" />
+                  </div>
                 </div>
-                <div className="text-left">
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-foreground transition-colors">
+                <div className="flex-1 text-left">
+                  <h4 className="font-medium">Location</h4>
+                  <div className="text-muted-foreground hover:text-foreground transition-colors">
                     Seattle, WA, United States
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>

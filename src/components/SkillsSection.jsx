@@ -12,16 +12,16 @@ import figmaLogo from "@/assets/figma-logo.png";
 
 
 const skills = [
-  { name: "Python", description: "JumpTrading, Axiom, Machine Learning curriculum @ UW.", logo: pythonLogo, invertLogo: true },
-  { name: "Java", description: "Amazon Web Services, Distributed Systems & majority of UW curriculum", logo: javaLogo, invertLogo: true },
-  { name: "C++", description: "eBPF Profiler Project, Operating Systems course, actively working on improving here!", logo: cppLogo, invertLogo: true },
-  { name: "Go", description: "Amazon Web Services", logo: goLogo, invertLogo: true },
-  { name: "React", description: "Built this website.", logo: reactLogo, invertLogo: false },
-  { name: "MySQL", description: "JumpTrading - Building Airflow from ground up.", logo: mysqlLogo, invertLogo: false },
-  { name: "PostgreSQL/ClickHouse", description: "Axiom - Self-hosted observability infrastructure.", logo: postgresLogo, invertLogo: true },
-  { name: "Git/GitHub", description: "Ubiquitous.", logo: gitLogo, invertLogo: true },
-  { name: "Docker/Kubernetes", description: "Unavoidable.", logo: dockerLogo, invertLogo: true },
-  { name: "Figma", description: "Personal Project Designs.", logo: figmaLogo, invertLogo: true },
+  { name: "Python", logo: pythonLogo, invertLogo: true },
+  { name: "Java", logo: javaLogo, invertLogo: true },
+  { name: "C++", logo: cppLogo, invertLogo: true },
+  { name: "Go", logo: goLogo, invertLogo: true },
+  { name: "React", logo: reactLogo, invertLogo: false },
+  { name: "MySQL", logo: mysqlLogo, invertLogo: false },
+  { name: "PostgreSQL/ClickHouse", logo: postgresLogo, invertLogo: true },
+  { name: "Git/GitHub", logo: gitLogo, invertLogo: true },
+  { name: "Docker/Kubernetes", logo: dockerLogo, invertLogo: true },
+  { name: "Figma", logo: figmaLogo, invertLogo: true },
 ];
 
 
@@ -41,7 +41,6 @@ export const SkillsSection = () => {
                 className={`${skill.name === 'Go' ? 'w-12 h-12' : 'w-10 h-10'} object-contain mb-2 ${skill.invertLogo ? 'filter dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
               />
               <h3 className="font-semibold text-lg text-foreground mb-2 text-center">{skill.name}</h3>
-              <p className="text-base text-foreground text-left w-full">{skill.description}</p>
             </div>
           ))}
         </div>
