@@ -79,7 +79,7 @@ export const ProjectsSection = () => {
 							<div className="p-6">
 								<div className="flex flex-wrap gap-2 mb-4">
 									{project.tags.map((tag) => (
-										<span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+										<span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-foreground">
 											{tag}
 										</span>
 									))}
@@ -130,7 +130,7 @@ export const ProjectsSection = () => {
 						/>
 						<button
 							onClick={closeModal}
-							className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded"
+							className="mt-4 px-4 py-2 bg-primary text-foreground rounded"
 						>
 							Close
 						</button>

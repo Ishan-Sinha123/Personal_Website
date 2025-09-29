@@ -39,10 +39,10 @@ export const AboutSection = () => {
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="cosmic-button text-foreground font-bold">Get In Touch</a>
+              <a href="#contact" className="cosmic-button text-foreground border-foreground bg-background hover:bg-foreground hover:text-background font-bold">Get In Touch</a>
               <a
                 href="/IshanSinha2026Resume.pdf"
-                className="px-6 py-2 rounded-full border border-primary text-foreground hover:bg-primary/10 transition-colors duration-300 font-bold"
+                className="px-6 py-2 rounded-full border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors duration-300 font-bold"
               >
                 Download CV
               </a>

@@ -28,7 +28,7 @@ export const HeroSection = () => {
         </p>
 
         <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-          <a href="#projects" className="cosmic-button bg-white text-foreground border-foreground hover:bg-foreground hover:text-white font-bold">
+          <a href="#projects" className="cosmic-button text-foreground border-foreground bg-background hover:bg-foreground hover:text-background font-bold">
             View My Work
           </a>
         </div>
