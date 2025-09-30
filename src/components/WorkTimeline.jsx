@@ -82,25 +82,23 @@ export const WorkTimeline = ({ items }) => {
               contentArrowStyle={{ borderRight: "7px solid transparent" }}
             >
               <div className="bg-card/80 dark:bg-card/90 rounded-md p-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <img
-                        src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
-                        alt={`${item.company} logo`}
-                        className="w-full h-full object-contain bg-transparent"
-                        style={{ maxWidth: 40, maxHeight: 40 }}
-                      />
-                    </div>
-                    <div>
-                      <div className="text-lg font-semibold">{item.role}</div>
-                      <div className="text-sm text-muted-foreground">
-                        {item.company}
-                        {item.location ? ` • ${item.location}` : ""}
-                      </div>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="text-lg font-semibold">{item.role}</div>
+                    <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
+                  </div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <img
+                      src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
+                      alt={`${item.company} logo`}
+                      className="object-contain bg-transparent"
+                      style={{ maxWidth: 40, maxHeight: 40 }}
+                    />
+                    <div className="text-sm text-muted-foreground">
+                      {item.company}
+                      {item.location ? ` • ${item.location}` : ""}
                     </div>
                   </div>
-                  <div className="text-sm text-muted-foreground ml-4 whitespace-nowrap">{item.date}</div>
                 </div>
 
                 <ul className="mt-3 ml-5 list-disc text-sm leading-tight space-y-1 text-left">
