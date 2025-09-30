@@ -72,27 +72,29 @@ export const WorkTimeline = ({ items }) => {
               contentStyle={{ background: "transparent", boxShadow: "none", padding: 0 }}
               contentArrowStyle={{ borderRight: "7px solid transparent" }}
             >
-              <div className="flex flex-col items-center mb-6">
-                <img
-                  src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
-                  alt={`${item.company} logo`}
-                  className="object-contain bg-transparent mb-2"
-                  style={{ maxWidth: 64, maxHeight: 64 }}
-                />
+              <div className="flex flex-row items-center gap-4 mb-4">
+                <div className="flex-shrink-0 flex items-center justify-center h-full">
+                  <img
+                    src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
+                    alt={`${item.company} logo`}
+                    className="object-contain bg-transparent"
+                    style={{ width: 48, height: 48, marginTop: 0 }}
+                  />
+                </div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full">
-                  <div className="flex flex-col gap-2">
-                    <div className="flex items-center justify-between mb-2">
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center justify-between mb-1">
                       <div className="text-lg font-semibold">{item.role}</div>
                       <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
                     </div>
-                    <div className="flex items-center gap-3 mb-2">
+                    <div className="flex items-center gap-2 mb-1">
                       <div className="text-sm text-muted-foreground">
                         {item.company}
                         {item.location ? ` • ${item.location}` : ""}
                       </div>
                     </div>
                   </div>
-                  <ul className="mt-3 ml-5 list-disc text-sm leading-tight space-y-1 text-left">
+                  <ul className="mt-2 ml-4 list-disc text-sm leading-tight space-y-1 text-left">
                     {item.bullets.map((b, i) => (
                       <li
                         key={i}
