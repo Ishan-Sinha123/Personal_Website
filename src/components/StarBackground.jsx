@@ -6,18 +6,47 @@ import { useEffect, useState } from "react";
 export const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     generateStars();
-    generateMeteors();
+    // Only generate meteors if theme is dark
+    if (document && document.documentElement.classList.contains("dark")) {
+      setIsDark(true);
+      generateMeteors();
+    } else {
+      setIsDark(false);
+      setMeteors([]);
+    }
 
     const handleResize = () => {
       generateStars();
     };
 
+    // Observe changes to the html.dark class (theme toggle) to enable/disable meteors
+    const observer = new MutationObserver(() => {
+      const dark = document.documentElement.classList.contains("dark");
+      if (dark && !isDark) {
+        setIsDark(true);
+        generateMeteors();
+      }
+      if (!dark && isDark) {
+        setIsDark(false);
+        setMeteors([]);
+      }
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
     window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      try {
+        observer.disconnect();
+      } catch (e) {
+        // ignore
+      }
+    };
   }, []);
 
   const generateStars = () => {
