@@ -64,42 +64,35 @@ export const WorkTimeline = ({ items }) => {
     <section id="experience" className="py-12">
       <div className="container max-w-6xl mx-auto flex flex-col items-center">
         <h3 className="text-2xl font-extrabold mb-6 text-center text-primary dark:text-white">Experience</h3>
-        <VerticalTimeline layout="1-column" className="vertical-timeline--horizontal">
-          {list.map((item, idx) => (
-            <div key={item.id} className="relative flex flex-row items-center w-full py-8">
-              {/* Timeline vertical line on the left */}
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-slate-300 dark:bg-white border-4 border-slate-300 dark:border-white rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
-              <div className="flex flex-col items-center w-full ml-12">
-                <div className="text-2xl font-extrabold mb-2 text-center w-full text-primary dark:text-white">{item.company}</div>
-                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-xl flex flex-col items-center justify-center">
-                  <div className="flex flex-col gap-1 w-full items-center">
-                    <div className="flex flex-col items-center mb-1 w-full">
-                      <div className="text-lg font-semibold text-center w-full">{item.role}</div>
-                      <div className="text-sm text-muted-foreground whitespace-nowrap text-center w-full">{item.date}</div>
+        <div className="relative w-full">
+          {/* Single left timeline line: blue in light, slate-200 in dark */}
+          <div className="absolute left-6 top-8 bottom-8 w-1 bg-blue-500 dark:bg-slate-200 rounded-full z-0" />
+          <div className="space-y-6">
+            {list.map((item, idx) => (
+              <div key={item.id} className="relative flex flex-row items-start w-full pl-16 pr-4 py-2">
+                <div className="z-10 flex-shrink-0 -ml-10">
+                  <div className="w-6 h-6 rounded-full bg-blue-500 dark:bg-slate-200 border-2 border-white" />
+                </div>
+                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl">
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="text-xl font-semibold text-primary dark:text-white">{item.company}</div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
                     </div>
-                    <div className="flex items-center gap-2 mb-1 text-center w-full">
-                      <div className="text-sm text-muted-foreground w-full">
-                        {item.location ? `${item.location}` : ""}
-                      </div>
-                    </div>
+                    <div className="text-sm text-muted-foreground mb-2">{item.role} {item.location ? `• ${item.location}` : ''}</div>
                   </div>
-                  <ul className="mt-2 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
+                  <ul className="mt-1 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
                     {item.bullets.map((b, i) => (
-                      <li
-                        key={i}
-                        className={`break-words ${
-                          isHighlighted(b) ? "font-bold text-white" : ""
-                        }`}
-                      >
+                      <li key={i} className={`break-words ${isHighlighted(b) ? 'font-bold text-white' : ''}`}>
                         {b}
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
-            </div>
-          ))}
-        </VerticalTimeline>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
