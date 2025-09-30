@@ -61,7 +61,7 @@ export const WorkTimeline = ({ items }) => {
   return (
     <section id="experience" className="py-12">
       <div className="container max-w-6xl mx-auto flex flex-col items-center">
-        <h3 className="text-2xl font-extrabold mb-6 text-center text-primary dark:text-white">Experience</h3>
+  <h3 className="text-sm font-extrabold mb-6 text-center text-blue-900 dark:text-slate-300">Experience</h3>
         <div className="relative w-full">
           {/* Single left timeline line: blue in light, slate-200 in dark */}
           <div className="absolute left-6 top-8 bottom-8 w-1 bg-blue-900 dark:bg-slate-200 rounded-full z-0" />
@@ -73,9 +73,9 @@ export const WorkTimeline = ({ items }) => {
                 </div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl mx-auto">
                   <div className="flex flex-col gap-2 items-start">
-                    <div className="text-2xl font-extrabold text-left text-primary text-white dark:text-white">{item.company}</div>
-                    <div className="text-sm text-muted-foreground text-left">{item.date}</div>
-                    <div className="text-sm text-muted-foreground text-left">{item.role} {item.location ? `• ${item.location}` : ''}</div>
+                    <div className="text-2xl font-extrabold text-left text-blue-900 dark:text-white">{item.company}</div>
+                    <div className="text-sm text-left text-blue-900 dark:text-slate-300">{item.date}</div>
+                    <div className="text-sm text-left text-blue-900 dark:text-slate-300">{item.role} {item.location ? `• ${item.location}` : ''}</div>
                   </div>
                   <ul className="mt-1 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
                     {item.bullets.map((b, i) => (
