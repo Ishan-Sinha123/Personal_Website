@@ -66,7 +66,7 @@ export const WorkTimeline = ({ items }) => {
         <h3 className="text-2xl font-extrabold mb-6 text-center text-primary dark:text-white">Experience</h3>
         <div className="relative w-full">
           {/* Single left timeline line: blue in light, slate-200 in dark */}
-          <div className="absolute left-6 top-8 bottom-8 w-1 bg-blue-500 dark:bg-slate-200 rounded-full z-0" />
+          <div className="absolute left-6 top-8 bottom-8 w-1 bg-blue-900 dark:bg-slate-200 rounded-full z-0" />
           <div className="space-y-6">
             {list.map((item, idx) => (
               <div key={item.id} className="relative flex flex-row items-start w-full pl-16 pr-4 py-2">
@@ -74,12 +74,10 @@ export const WorkTimeline = ({ items }) => {
                   <div className="w-6 h-6 rounded-full bg-blue-500 dark:bg-slate-200 border-2 border-white" />
                 </div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl">
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-center justify-between mb-1">
-                      <div className="text-xl font-semibold text-primary dark:text-white">{item.company}</div>
-                      <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
-                    </div>
-                    <div className="text-sm text-muted-foreground mb-2">{item.role} {item.location ? `• ${item.location}` : ''}</div>
+                  <div className="flex flex-col gap-2 items-center">
+                    <div className="text-2xl font-extrabold text-center text-primary dark:text-white">{item.company}</div>
+                    <div className="text-sm text-muted-foreground text-center">{item.date}</div>
+                    <div className="text-sm text-muted-foreground text-center">{item.role} {item.location ? `• ${item.location}` : ''}</div>
                   </div>
                   <ul className="mt-1 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
                     {item.bullets.map((b, i) => (
