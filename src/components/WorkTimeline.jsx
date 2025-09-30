@@ -66,38 +66,24 @@ export const WorkTimeline = ({ items }) => {
         <h3 className="text-2xl font-semibold mb-6">Experience</h3>
         <VerticalTimeline layout="1-column" className="vertical-timeline--horizontal">
           {list.map((item, idx) => (
-            <div key={item.id} className="relative flex items-center">
-              {/* Timeline vertical line (bold) */}
-              <div className="absolute left-6 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
-              <div className="flex flex-row items-center gap-4 py-2">
-                <div className="flex-shrink-0 flex items-center justify-center h-full">
-                  <div className="w-32 h-32 flex items-center justify-center bg-white rounded-full border-4 border-primary z-10" style={{ boxShadow: '0 0 0 12px rgba(59,130,246,0.12)' }}>
-                    {item.logo === "AXIOM" ? (
-                      <span className="text-4xl font-extrabold tracking-wide text-primary flex items-center justify-center h-full">AXIOM</span>
-                    ) : (
-                      <img
-                        src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
-                        alt={`${item.company} logo`}
-                        className="object-contain bg-transparent flex items-center justify-center"
-                        style={{ width: 96, height: 96, display: 'block', margin: 'auto' }}
-                      />
-                    )}
-                  </div>
-                </div>
-                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full flex flex-col justify-center">
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-center justify-between mb-1">
-                      <div className="text-lg font-semibold">{item.role}</div>
-                      <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
+            <div key={item.id} className="relative flex flex-col items-center w-full">
+              {/* Centered timeline vertical line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
+              <div className="flex flex-col items-center w-full py-6">
+                <div className="text-2xl font-extrabold text-primary mb-2 text-center">{item.company}</div>
+                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-xl flex flex-col items-center justify-center">
+                  <div className="flex flex-col gap-1 w-full items-center">
+                    <div className="flex flex-col items-center mb-1 w-full">
+                      <div className="text-lg font-semibold text-center">{item.role}</div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap text-center">{item.date}</div>
                     </div>
-                    <div className="flex items-center gap-2 mb-1">
+                    <div className="flex items-center gap-2 mb-1 text-center">
                       <div className="text-sm text-muted-foreground">
-                        {item.company}
-                        {item.location ? ` • ${item.location}` : ""}
+                        {item.location ? `${item.location}` : ""}
                       </div>
                     </div>
                   </div>
-                  <ul className="mt-2 ml-4 list-disc text-sm leading-tight space-y-1 text-left">
+                  <ul className="mt-2 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
                     {item.bullets.map((b, i) => (
                       <li
                         key={i}
