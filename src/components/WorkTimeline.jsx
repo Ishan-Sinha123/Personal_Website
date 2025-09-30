@@ -63,14 +63,14 @@ export const WorkTimeline = ({ items }) => {
   return (
     <section id="experience" className="py-12">
       <div className="container max-w-6xl mx-auto">
-        <h3 className="text-2xl font-semibold mb-6">Experience</h3>
+        <h3 className="text-2xl font-extrabold mb-6 text-primary text-center dark:text-white">Experience</h3>
         <VerticalTimeline layout="1-column" className="vertical-timeline--horizontal">
           {list.map((item, idx) => (
             <div key={item.id} className="relative flex flex-row items-center w-full py-8">
               {/* Timeline vertical line on the left */}
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-primary dark:bg-white border-4 border-primary dark:border-white rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
               <div className="flex flex-col items-center w-full ml-12">
-                <div className="text-2xl font-extrabold text-primary mb-2 text-center w-full">{item.company}</div>
+                <div className="text-2xl font-extrabold mb-2 text-center w-full text-primary dark:text-white">{item.company}</div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-xl flex flex-col items-center justify-center">
                   <div className="flex flex-col gap-1 w-full items-center">
                     <div className="flex flex-col items-center mb-1 w-full">
