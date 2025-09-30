@@ -19,8 +19,6 @@ export const WorkTimeline = ({ items }) => {
         "Team of 8 ex-Meta Superintelligence Lab Researchers + Stanford PhD.",
         "Raised $60M to develop LLMs trained on mathematical proofs with a moonshot goal to formalize all of Math.",
         "Working on ETL pipelines and LEAN proof validator.",
-        "TernFS: High-performance distributed file system",
-        "Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)",
       ],
       logo: "/projects/axiom-logo.png",
       logo: "AXIOM",
@@ -71,7 +69,7 @@ export const WorkTimeline = ({ items }) => {
             {list.map((item, idx) => (
               <div key={item.id} className="relative flex flex-row items-start w-full pl-16 pr-4 py-2">
                 <div className="z-10 flex-shrink-0 -ml-10">
-                  <div className="w-6 h-6 rounded-full bg-blue-500 dark:bg-slate-200 border-2 border-white" />
+                  <div className="w-6 h-6 rounded-full bg-blue-900 dark:bg-slate-200 border-2 dark:border-slate-300 border-white" />
                 </div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl">
                   <div className="flex flex-col gap-2 items-center">
