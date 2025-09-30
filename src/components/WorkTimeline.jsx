@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "react-vertical-timeline-component/style.min.css";
 
 export const WorkTimeline = ({ items }) => {
   const defaultItems = [
@@ -62,57 +63,48 @@ export const WorkTimeline = ({ items }) => {
     <section id="experience" className="py-12">
       <div className="container max-w-6xl mx-auto">
         <h3 className="text-2xl font-semibold mb-6">Experience</h3>
-
-        <VerticalTimeline>
+        <VerticalTimeline layout="1-column" className="vertical-timeline--horizontal">
           {list.map((item) => (
             <VerticalTimelineElement
               key={item.id}
               iconStyle={{ background: "transparent", boxShadow: "none" }}
-              icon={
-                <div className="w-12 h-12 flex items-center justify-center">
-                  <img
-                    src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
-                    alt={`${item.company} logo`}
-                    className="w-full h-full object-contain bg-transparent"
-                    style={{ maxWidth: 48, maxHeight: 48 }}
-                  />
-                </div>
-              }
+              icon={null}
               contentStyle={{ background: "transparent", boxShadow: "none", padding: 0 }}
               contentArrowStyle={{ borderRight: "7px solid transparent" }}
             >
-              <div className="bg-card/80 dark:bg-card/90 rounded-md p-4">
-                <div className="flex flex-col gap-2">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="text-lg font-semibold">{item.role}</div>
-                    <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
-                  </div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <img
-                      src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
-                      alt={`${item.company} logo`}
-                      className="object-contain bg-transparent"
-                      style={{ maxWidth: 40, maxHeight: 40 }}
-                    />
-                    <div className="text-sm text-muted-foreground">
-                      {item.company}
-                      {item.location ? ` • ${item.location}` : ""}
+              <div className="flex flex-col items-center mb-6">
+                <img
+                  src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
+                  alt={`${item.company} logo`}
+                  className="object-contain bg-transparent mb-2"
+                  style={{ maxWidth: 64, maxHeight: 64 }}
+                />
+                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full">
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="text-lg font-semibold">{item.role}</div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap">{item.date}</div>
+                    </div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="text-sm text-muted-foreground">
+                        {item.company}
+                        {item.location ? ` • ${item.location}` : ""}
+                      </div>
                     </div>
                   </div>
+                  <ul className="mt-3 ml-5 list-disc text-sm leading-tight space-y-1 text-left">
+                    {item.bullets.map((b, i) => (
+                      <li
+                        key={i}
+                        className={`break-words ${
+                          isHighlighted(b) ? "font-bold text-white" : ""
+                        }`}
+                      >
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-
-                <ul className="mt-3 ml-5 list-disc text-sm leading-tight space-y-1 text-left">
-                  {item.bullets.map((b, i) => (
-                    <li
-                      key={i}
-                      className={`break-words ${
-                        isHighlighted(b) ? "font-bold text-white" : ""
-                      }`}
-                    >
-                      {b}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </VerticalTimelineElement>
           ))}
