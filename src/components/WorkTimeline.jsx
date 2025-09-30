@@ -71,15 +71,15 @@ export const WorkTimeline = ({ items }) => {
               <div className="absolute left-6 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
               <div className="flex flex-row items-center gap-4 py-2">
                 <div className="flex-shrink-0 flex items-center justify-center h-full">
-                  <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full border-4 border-primary z-10" style={{ boxShadow: '0 0 0 8px rgba(59,130,246,0.15)' }}>
+                  <div className="w-32 h-32 flex items-center justify-center bg-white rounded-full border-4 border-primary z-10" style={{ boxShadow: '0 0 0 12px rgba(59,130,246,0.12)' }}>
                     {item.logo === "AXIOM" ? (
-                      <span className="text-3xl font-extrabold tracking-wide text-primary">AXIOM</span>
+                      <span className="text-4xl font-extrabold tracking-wide text-primary flex items-center justify-center h-full">AXIOM</span>
                     ) : (
                       <img
                         src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
                         alt={`${item.company} logo`}
-                        className="object-contain bg-transparent"
-                        style={{ width: 56, height: 56 }}
+                        className="object-contain bg-transparent flex items-center justify-center"
+                        style={{ width: 96, height: 96, display: 'block', margin: 'auto' }}
                       />
                     )}
                   </div>
