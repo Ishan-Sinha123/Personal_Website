@@ -71,20 +71,20 @@ export const WorkTimeline = ({ items }) => {
               <div className="absolute left-6 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
               <div className="flex flex-row items-center gap-4 py-2">
                 <div className="flex-shrink-0 flex items-center justify-center h-full">
-                  <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full border-2 border-primary z-10">
+                  <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full border-4 border-primary z-10" style={{ boxShadow: '0 0 0 8px rgba(59,130,246,0.15)' }}>
                     {item.logo === "AXIOM" ? (
-                      <span className="text-2xl font-extrabold tracking-wide text-primary">AXIOM</span>
+                      <span className="text-3xl font-extrabold tracking-wide text-primary">AXIOM</span>
                     ) : (
                       <img
                         src={item.logo.startsWith('/') ? item.logo : `/projects/${item.logo}`}
                         alt={`${item.company} logo`}
                         className="object-contain bg-transparent"
-                        style={{ width: 40, height: 40 }}
+                        style={{ width: 56, height: 56 }}
                       />
                     )}
                   </div>
                 </div>
-                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full">
+                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full flex flex-col justify-center">
                   <div className="flex flex-col gap-1">
                     <div className="flex items-center justify-between mb-1">
                       <div className="text-lg font-semibold">{item.role}</div>
