@@ -71,11 +71,11 @@ export const WorkTimeline = ({ items }) => {
                 <div className="z-10 flex-shrink-0 -ml-10">
                   <div className="w-6 h-6 rounded-full bg-blue-900 dark:bg-slate-200 border-2 dark:border-slate-300 border-white" />
                 </div>
-                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl">
-                  <div className="flex flex-col gap-2 items-center">
-                    <div className="text-2xl font-extrabold text-center text-primary dark:text-white">{item.company}</div>
-                    <div className="text-sm text-muted-foreground text-center">{item.date}</div>
-                    <div className="text-sm text-muted-foreground text-center">{item.role} {item.location ? `• ${item.location}` : ''}</div>
+                <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-3xl mx-auto">
+                  <div className="flex flex-col gap-2 items-start">
+                    <div className="text-2xl font-extrabold text-left text-primary text-white dark:text-white">{item.company}</div>
+                    <div className="text-sm text-muted-foreground text-left">{item.date}</div>
+                    <div className="text-sm text-muted-foreground text-left">{item.role} {item.location ? `• ${item.location}` : ''}</div>
                   </div>
                   <ul className="mt-1 ml-4 list-disc text-sm leading-tight space-y-1 text-left w-full">
                     {item.bullets.map((b, i) => (
