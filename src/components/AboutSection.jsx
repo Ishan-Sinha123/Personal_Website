@@ -19,19 +19,19 @@ export const AboutSection = () => {
 
               <div className="mt-4 space-y-3">
                 <div className="rounded-md p-4 bg-primary/20">
-                  <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
+                  <a href="https://github.com/XTXMarkets/ternfs" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline">
                     TernFS: High-performance distributed file system
                   </a>
                 </div>
 
                 <div className="rounded-md p-4 bg-primary/20">
-                  <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80 block">
+                  <a href="https://github.com/open-telemetry/opentelemetry-ebpf-profiler" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline block">
                     OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)
                   </a>
                 </div>
 
                 <div className="rounded-md p-4 bg-primary/20">
-                  <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="underline text-foreground hover:text-foreground/80">
+                  <a href="https://github.com/ByteDance-Seed/Seed-Prover" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline">
                     Seed-Prover from ByteDance (State of the Art - Formal Proof Generation for Advanced Mathematics)
                   </a>
                 </div>
