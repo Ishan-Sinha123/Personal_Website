@@ -69,16 +69,16 @@ export const WorkTimeline = ({ items }) => {
             <div key={item.id} className="relative flex flex-row items-center w-full py-8">
               {/* Timeline vertical line on the left */}
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-primary border-4 border-primary rounded-full z-0" style={{ height: idx === list.length - 1 ? '50%' : '100%' }} />
-              <div className="flex flex-col items-start w-full ml-12">
-                <div className="text-2xl font-extrabold text-primary mb-2 text-left">{item.company}</div>
+              <div className="flex flex-col items-center w-full ml-12">
+                <div className="text-2xl font-extrabold text-primary mb-2 text-center w-full">{item.company}</div>
                 <div className="bg-card/80 dark:bg-card/90 rounded-md p-4 w-full max-w-xl flex flex-col items-center justify-center">
                   <div className="flex flex-col gap-1 w-full items-center">
                     <div className="flex flex-col items-center mb-1 w-full">
-                      <div className="text-lg font-semibold text-center">{item.role}</div>
-                      <div className="text-sm text-muted-foreground whitespace-nowrap text-center">{item.date}</div>
+                      <div className="text-lg font-semibold text-center w-full">{item.role}</div>
+                      <div className="text-sm text-muted-foreground whitespace-nowrap text-center w-full">{item.date}</div>
                     </div>
-                    <div className="flex items-center gap-2 mb-1 text-center">
-                      <div className="text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 mb-1 text-center w-full">
+                      <div className="text-sm text-muted-foreground w-full">
                         {item.location ? `${item.location}` : ""}
                       </div>
                     </div>
