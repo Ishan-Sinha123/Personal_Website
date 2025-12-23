@@ -32,7 +32,6 @@ export const WorkTimeline = ({ items }) => {
         "Designed and implemented cross-platform, automated dependency management system supporting cloud-scale ETL pipeline backfills.",
         "Architected remote access solutions for closed-network nodes, Airflow infrastructure, and grid computing systems.",
         "Engineered intelligent sharding algorithms reducing backfill processing time by 6+ hours and optimizing compute resource utilization.",
-        "OpenTelemetry eBPF Profiler (ElasticSearch Open Sourced Project! - Also learning more about eBPF :D)",
       ],
       logo: "/projects/jump-logo.png",
     },
