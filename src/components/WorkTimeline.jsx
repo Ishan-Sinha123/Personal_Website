@@ -21,7 +21,6 @@ export const WorkTimeline = ({ items }) => {
         "Working on ETL pipelines and LEAN proof validator.",
       ],
       logo: "/projects/axiom-logo.png",
-      logo: "AXIOM",
     },
     {
       id: 2,
