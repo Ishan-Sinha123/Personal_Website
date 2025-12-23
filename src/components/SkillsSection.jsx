@@ -32,24 +32,21 @@ export const SkillsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-foreground">
           My <span className="text-foreground"> Skills</span>
         </h2>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mx-auto">
           {skills.map((skill, key) => (
             <div
               key={key}
               className="hexagon-container group"
               style={{
-                width: '140px',
-                height: '161px',
+                width: '160px',
+                height: '184px',
               }}
             >
-              <div className="hexagon bg-card border-2 border-foreground/10 group-hover:border-foreground/30 group-hover:scale-105 transition-all duration-300">
-                <div className="hexagon-content flex flex-col items-center justify-center p-4">
-                  <img
-                    src={skill.logo}
-                    alt={skill.name + ' logo'}
-                    className={`${skill.name === 'Go' ? 'w-10 h-10' : 'w-8 h-8'} object-contain mb-2 ${skill.invertLogo ? 'filter brightness-0 dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
-                  />
-                  <h3 className="font-semibold text-sm text-foreground text-center leading-tight">{skill.name}</h3>
+              <div className="hexagon bg-card border-2 border-foreground/20 group-hover:border-foreground/50 group-hover:scale-105 group-hover:shadow-lg transition-all duration-300">
+                <div className="hexagon-content flex items-center justify-center p-6">
+                  <h3 className="font-bold text-base text-foreground text-center leading-tight">
+                    {skill.name}
+                  </h3>
                 </div>
               </div>
             </div>
