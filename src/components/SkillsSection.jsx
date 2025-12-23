@@ -28,19 +28,30 @@ const skills = [
 export const SkillsSection = () => {
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-foreground">
           My <span className="text-foreground"> Skills</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {skills.map((skill, key) => (
-            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover flex flex-col items-center">
-              <img
-                src={skill.logo}
-                alt={skill.name + ' logo'}
-                className={`${skill.name === 'Go' ? 'w-12 h-12' : 'w-10 h-10'} object-contain mb-2 ${skill.invertLogo ? 'filter brightness-0 dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
-              />
-              <h3 className="font-semibold text-lg text-foreground mb-2 text-center">{skill.name}</h3>
+            <div
+              key={key}
+              className="hexagon-container group"
+              style={{
+                width: '140px',
+                height: '161px',
+              }}
+            >
+              <div className="hexagon bg-card border-2 border-foreground/10 group-hover:border-foreground/30 group-hover:scale-105 transition-all duration-300">
+                <div className="hexagon-content flex flex-col items-center justify-center p-4">
+                  <img
+                    src={skill.logo}
+                    alt={skill.name + ' logo'}
+                    className={`${skill.name === 'Go' ? 'w-10 h-10' : 'w-8 h-8'} object-contain mb-2 ${skill.invertLogo ? 'filter brightness-0 dark:brightness-0 dark:invert dark:contrast-125' : ''}`}
+                  />
+                  <h3 className="font-semibold text-sm text-foreground text-center leading-tight">{skill.name}</h3>
+                </div>
+              </div>
             </div>
           ))}
         </div>
