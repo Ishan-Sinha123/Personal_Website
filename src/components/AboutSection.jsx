@@ -1,4 +1,4 @@
-import { Eye, Database, Brain, Download } from "lucide-react";
+import { Eye, Database, Brain } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -100,13 +100,10 @@ export const AboutSection = () => {
           </div>
         </div>
 
-        {/* Centered oval action buttons below both columns */}
-        <div className="mt-8 flex justify-center items-center gap-4">
+        {/* Centered action button below both columns */}
+        <div className="mt-8 flex justify-center items-center">
           <a href="#contact" className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-foreground text-foreground bg-background hover:bg-foreground hover:text-background transition-colors font-bold">
             Get In Touch
-          </a>
-          <a href="/IshanSinha2026Resume.pdf" download className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-foreground text-foreground bg-background hover:bg-foreground hover:text-background transition-colors font-bold">
-            <Download className="h-4 w-4 inline-block mr-2" /> Download CV
           </a>
         </div>
       </div>
